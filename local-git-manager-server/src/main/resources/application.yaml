@@ -1,0 +1,12 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+
+spring:
+  application:
+    name: local-git-manager-server
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:${user.home}/code/local-git-manager/data/local-git-manager.db
+    username:
+    password:

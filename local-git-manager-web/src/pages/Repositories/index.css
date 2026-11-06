@@ -1,0 +1,155 @@
+.page-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  margin: 0;
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.page-description {
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.panel-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.repository-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.repository-total {
+  color: var(--app-text-secondary);
+  font-size: 12px;
+}
+
+.repository-table-card {
+  padding: 10px;
+  overflow: hidden;
+  background: var(--app-card-bg);
+  border: 1px solid var(--app-border-light);
+  border-radius: var(--app-radius-card);
+  box-shadow: var(--app-card-shadow);
+  /* border: solid 1px red; */
+}
+
+/* 仓库名称 */
+.repository-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.repository-name-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--app-primary);
+  background: var(--app-primary-bg);
+  border-radius: 8px;
+}
+
+.repository-name-info {
+  min-width: 0;
+}
+
+.repository-name {
+  overflow: hidden;
+  color: var(--app-text-primary);
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.repository-path {
+  max-width: 320px;
+  margin-top: 5px;
+  overflow: hidden;
+  color: var(--app-text-tertiary);
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 分支 */
+.repository-branch {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--app-text-secondary);
+}
+
+/* 提交信息 */
+.repository-commit-message {
+  overflow: hidden;
+  color: var(--app-text-primary);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.repository-commit-time {
+  margin-top: 5px;
+  color: var(--app-text-tertiary);
+  font-size: 11px;
+}
+
+/* 表格 */
+.repository-table-card .ant-table {
+  background: transparent;
+}
+
+.repository-table-card .ant-table-cell {
+  white-space: nowrap;
+}
+
+.repository-table-card .ant-table-thead > tr > th {
+  color: var(--app-text-secondary);
+  font-weight: 600;
+  background: var(--app-content-bg);
+}
+
+.repository-table-card .ant-table-tbody > tr > td {
+  color: var(--app-text-primary);
+}
+
+.repository-table-card .ant-table-tbody > tr:hover > td {
+  background: var(--app-primary-bg) !important;
+}
+
+.repository-table-card .ant-pagination {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1100px) {
+  .repository-table-card {
+    padding: 10px;
+  }
+
+  .repository-path {
+    max-width: 180px;
+  }
+}
